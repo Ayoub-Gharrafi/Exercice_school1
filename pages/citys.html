@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-site touristique du Maroc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #004aad;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header a img {
+            height: 100px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+            background-color: #007acc;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul a:hover {
+            background-color: #005a99;
+        }
+
+        .cities {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .city-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .city-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .city-card h3 {
+            background-color: #f0f0f0;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .city-card p {
+            padding: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .city-card a {
+            display: inline-block;
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .city-card a:hover {
+            background-color: #005a99;
+        }
+
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 40px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cities {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../pictures/morroco/morroco1.jpg" alt="Morocco">
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="../index.html">Home</a> 
+            <a href="citys.html">Citys</a> 
+            <a href="contact.html">Contact</a> 
+        </ul>
+    </nav>
+
+    <div class="cities">
+        <!-- Tanger -->
+        <div class="city-card">
+            <img src="../pictures/tanger/tanger.jpg" alt="Tanger">
+            <h3>Tanger</h3>
+            <p>Tanger est une ville portuaire située à la pointe nord du Maroc, là où l'océan Atlantique rencontre la mer Méditerranée. 
+               Connue pour son riche passé culturel et son mélange unique de traditions marocaines et d'influences européennes.</p>
+            <a href="places.html#tanger">Cliquez ici pour en savoir plus</a>
+        </div>
+
+        <!-- Marrakech -->
+        <div class="city-card">
+            <img src="../pictures/marrakech/marrakech.jpg" alt="Marrakech">
+            <h3>Marrakech</h3>
+            <p>Marrakech, la "Ville Rouge", est célèbre pour sa place Jemaa el-Fna et ses magnifiques jardins. 
+               Elle allie charme marocain traditionnel et attractions modernes, ce qui en fait une destination touristique prisée.</p>
+            <a href="places.html#marrakech">Cliquez ici pour en savoir plus</a>
+        </div>
+
+        <!-- Hoceïma -->
+        <div class="city-card">
+            <img src="../pictures/hociema/hociema.jpg" alt="Hoceïma">
+            <h3>Hoceïma</h3>
+            <p>Hoceïma est réputée pour ses plages magnifiques et son ambiance paisible. Nichée entre les montagnes du Rif, 
+               elle offre des paysages spectaculaires avec des criques cachées et des eaux cristallines.</p>
+            <a href="places.html#hociema">Cliquez ici pour en savoir plus</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy;2024 Mini-site touristique du Maroc
+    </footer>
+</body>
+
+</html>
